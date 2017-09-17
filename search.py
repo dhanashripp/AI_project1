@@ -18,6 +18,7 @@ Pacman agents (in searchAgents.py).
 """
 
 import util
+import searchAgents
 
 class SearchProblem:
     """
@@ -81,39 +82,118 @@ def depthFirstSearch(problem):
 
     To get started, you might want to try some of these simple commands to
     understand the search problem that is being passed in:
-
+     "*** YOUR CODE HERE ***"
     print "Start:", problem.getStartState()
     print "Is the start a goal?", problem.isGoalState(problem.getStartState())
     print "Start's successors:", problem.getSuccessors(problem.getStartState())
+
+
     """
-    print "Start:", problem.getStartState()
-    print "Start's successors:", problem.getSuccessors(problem.getStartState())
 
-    start_node = problem.getStartState()
-    dfs_stack = util.Stack()
-
-    if (problem.isGoalState(start_node))
-        #No need to go further
+    if(problem.isGoalState(problem.getStartState())):
         return []
-    dfs_stack.push(start_node)
-    prevNodes = {}
-    prevActions = {}
-    visited = []
+    else:
+        from game import Directions
+        dfs_stack = util.Stack()
+        v1 = problem.getStartState()
+        visited = []
+        dfs_stack.push(v1)
+        previous_N = {}
+        previous_A = {}
+        LIST=[]
+        while (not dfs_stack.isEmpty()):
+            vertex_popped = dfs_stack.pop()
+            if(problem.isGoalState(vertex_popped)):
+                Path = []
+                tempPath=[]
+                g = vertex_popped
+                while g in previous_N:
+                    temp = previous_A[g]
+                    tempPath.append(temp)
+                    g = previous_N[g]
+                for j in reversed(tempPath):
+                    Path.append(j)
+                return Path
+            if((vertex_popped not in visited)):
+                visited.append(vertex_popped)
+            LIST = problem.getSuccessors(vertex_popped)
 
-    while (dfs_stack.isEmpty() is not 0):
-	       curr_node = dfs_stack.pop()
-           for() in problem.getSuccessors(curr_node
-           problem.getSuccessors(curr_node)
+            for (N,A,C) in LIST:
+                if ((A == Directions.SOUTH)):
+                    if((N not in visited)):
+                        previous_N[N] = vertex_popped
+                        previous_A[N] = A
+                        dfs_stack.push(N)
+                    visited.append(N)
+                    break
+
+            for (N,A,C) in LIST:
+                if((N not in visited)):
+                    previous_N[N] = vertex_popped
+                    previous_A[N] = A
+                    dfs_stack.push(N)
 
 def breadthFirstSearch(problem):
-    """Search the shallowest nodes in the search tree first."""
-    "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    if(problem.isGoalState(problem.getStartState())):
+        return []
+    else:
+        from game import Directions
+        bfs_queue = util.Queue()
+        v1 = problem.getStartState()
+        visited = []
+        bfs_queue.push(v1)
+        previous_N = {}
+        previous_A = {}
+        LIST=[]
+        visited.append(v1)
+        while (not bfs_queue.isEmpty()):
+            vertex_popped = bfs_queue.pop()
+            if(problem.isGoalState(vertex_popped)):
+                Path = []
+                tempPath=[]
+                g = vertex_popped
+                while g in previous_N:
+                    temp = previous_A[g]
+                    tempPath.append(temp)
+                    g = previous_N[g]
+                for j in reversed(tempPath):
+                    Path.append(j)
+                return Path
+            LIST = problem.getSuccessors(vertex_popped)
+            for (N,A,C) in LIST:
+                if((N not in visited)):
+                    visited.append(N)
+                    previous_N[N] = vertex_popped
+                    previous_A[N] = A
+                    bfs_queue.push(N)
 
 def uniformCostSearch(problem):
-    """Search the node of least total cost first."""
-    "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    if(problem.isGoalState(problem.getStartState())):
+        return []
+    else:
+        v1 = problem.getStartState()
+        ucs_queue = util.PriorityQueue()
+        visited = []
+        cost = 0
+        tupl = (v1, [], 0)
+
+        ucs_queue.push(tupl, cost)
+        while (not ucs_queue.isEmpty()):
+            node = ucs_queue.pop()
+            vertex_popped = node[0]
+
+            if(problem.isGoalState(vertex_popped)):
+                return node[1]
+
+            if((vertex_popped not in visited)):
+                visited.append(vertex_popped)
+                s_cost = node[2]
+                for (N,A,C) in problem.getSuccessors(vertex_popped):
+                    cost = s_cost
+                    path = node[1]
+                    path = path + [A]
+                    cost += C
+                    ucs_queue.push((N, path, cost), cost)
 
 def nullHeuristic(state, problem=None):
     """
@@ -123,9 +203,35 @@ def nullHeuristic(state, problem=None):
     return 0
 
 def aStarSearch(problem, heuristic=nullHeuristic):
-    """Search the node that has the lowest combined cost and heuristic first."""
-    "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    
+    if(problem.isGoalState(problem.getStartState())):
+        return []
+    else:
+        v1 = problem.getStartState()
+        ucs_queue = util.PriorityQueue()
+        visited = []
+        cost = 0
+        h_value = heuristic(v1, problem)
+        tupl = (v1, [], 0)
+
+        ucs_queue.push(tupl, cost + h_value)
+        while (not ucs_queue.isEmpty()):
+            node = ucs_queue.pop()
+            vertex_popped = node[0]
+
+            if(problem.isGoalState(vertex_popped)):
+                return node[1]
+
+            if((vertex_popped not in visited)):
+                visited.append(vertex_popped)
+                s_cost = node[2]
+                for (N,A,C) in problem.getSuccessors(vertex_popped):
+                    cost = s_cost
+                    path = node[1]
+                    path = path + [A]
+                    cost += C
+                    new_hvalue = heuristic(N, problem)
+                    ucs_queue.push((N, path, cost), new_hvalue + cost)
 
 
 # Abbreviations

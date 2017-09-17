@@ -4,7 +4,7 @@
 # educational purposes provided that (1) you do not distribute or publish
 # solutions, (2) you retain this notice, and (3) you provide clear
 # attribution to UC Berkeley, including a link to http://ai.berkeley.edu.
-# 
+#
 # Attribution Information: The Pacman AI projects were developed at UC Berkeley.
 # The core projects and autograders were primarily created by John DeNero
 # (denero@cs.berkeley.edu) and Dan Klein (klein@cs.berkeley.edu).
@@ -287,47 +287,28 @@ class CornersProblem(search.SearchProblem):
         self._expanded = 0 # DO NOT CHANGE; Number of search nodes expanded
         # Please add any code here which you would like to use
         # in initializing the problem
-        "*** YOUR CODE HERE ***"
+
+        corner_visited = [False, False, False, False]
+        if self.startingPosition in self.corners:
+            print "Corner :", self.startingPosition
+            i = self.corners.index(self.startingPosition)
+            corner_visited[i] = True
+        self.startState = (self.startingPosition, tuple(corner_visited))
 
     def getStartState(self):
-        """
-        Returns the start state (in your state space, not the full Pacman state
-        space)
-        """
-        "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        return self.startState
 
     def isGoalState(self, state):
-        """
-        Returns whether this search state is a goal state of the problem.
-        """
-        "*** YOUR CODE HERE ***"
+        counter = 0
+        for i in state[1]:
+            if (i == True):
+                counter+=1
+        if (counter == 4):
+            return True
+        else:
+            return False
+
         util.raiseNotDefined()
-
-    def getSuccessors(self, state):
-        """
-        Returns successor states, the actions they require, and a cost of 1.
-
-         As noted in search.py:
-            For a given state, this should return a list of triples, (successor,
-            action, stepCost), where 'successor' is a successor to the current
-            state, 'action' is the action required to get there, and 'stepCost'
-            is the incremental cost of expanding to that successor
-        """
-
-        successors = []
-        for action in [Directions.NORTH, Directions.SOUTH, Directions.EAST, Directions.WEST]:
-            # Add a successor state to the successor list if the action is legal
-            # Here's a code snippet for figuring out whether a new position hits a wall:
-            #   x,y = currentPosition
-            #   dx, dy = Actions.directionToVector(action)
-            #   nextx, nexty = int(x + dx), int(y + dy)
-            #   hitsWall = self.walls[nextx][nexty]
-
-            "*** YOUR CODE HERE ***"
-
-        self._expanded += 1 # DO NOT CHANGE
-        return successors
 
     def getCostOfActions(self, actions):
         """
@@ -342,6 +323,51 @@ class CornersProblem(search.SearchProblem):
             if self.walls[x][y]: return 999999
         return len(actions)
 
+    def getSuccessors(self, state):
+        """
+        Returns successor states, the actions they require, and a cost of 1.
+
+         As noted in search.py:
+            For a given state, this should return a list of triples, (successor,
+            action, stepCost), where 'successor' is a successor to the current
+            state, 'action' is the action required to get there, and 'stepCost'
+            is the incremental cost of expanding to that successor
+        """
+        from copy import deepcopy
+        successors = []
+        for action in [Directions.NORTH, Directions.SOUTH, Directions.EAST, Directions.WEST]:
+            # Add a successor state to the successor list if the action is legal
+            # Here's a code snippet for figuring out whether a new position hits a wall:
+            #   x,y = currentPosition
+            #   dx, dy = Actions.directionToVector(action)
+            #   nextx, nexty = int(x + dx), int(y + dy)
+            #   hitsWall = self.walls[nextx][nexty]
+
+            x,y = state[0]
+            dx, dy = Actions.directionToVector(action)
+            nextx, nexty = int(x + dx), int(y + dy)
+            if not self.walls[nextx][nexty]:
+                next_s = (nextx, nexty)
+                prev_corners = list(deepcopy(state[1]))
+                """
+                temp = state[1]
+                i = 0
+                while i < 4:
+                    prev_corners[i] = temp[0][i]
+                    i+=1
+                """
+                if next_s in self.corners:
+                    i = self.corners.index(next_s)
+                    prev_corners[i] = True
+                successors.append(((next_s, tuple(prev_corners)), action, 1))
+
+        self._expanded += 1 # DO NOT CHANGE
+        return successors
+
+    def euclideanDistance(self, xy1, xy2 ):
+        import math
+        "Returns the Manhattan distance between points xy1 and xy2"
+        return math.ceil(((xy1[0] - xy2[0]) ** 2 + (xy1[1] - xy2[1]) ** 2 ) ** 0.5)
 
 def cornersHeuristic(state, problem):
     """
@@ -358,9 +384,15 @@ def cornersHeuristic(state, problem):
     """
     corners = problem.corners # These are the corner coordinates
     walls = problem.walls # These are the walls of the maze, as a Grid (game.py)
+    distance = []
+    j = 0
+    corners = problem.corners
+    for i in corners:
+        #distance.append((util.manhattanDistance(state[0], i))*(problem.euclideanDistance(state[0], i)))
+        distance.append((util.manhattanDistance(state[0], i)))
+    distance.sort()
 
-    "*** YOUR CODE HERE ***"
-    return 0 # Default to trivial solution
+    return distance[0]
 
 class AStarCornersAgent(SearchAgent):
     "A SearchAgent for FoodSearchProblem using A* and your foodHeuristic"
@@ -453,8 +485,16 @@ def foodHeuristic(state, problem):
     problem.heuristicInfo['wallCount']
     """
     position, foodGrid = state
-    "*** YOUR CODE HERE ***"
-    return 0
+    food = foodGrid.asList()
+    distance = []
+    if len(food) == 0:
+        return 0
+    else:
+        for i in food:
+            #distance.append((util.manhattanDistance(state[0], i))*(problem.euclideanDistance(state[0], i)))
+            distance.append((util.manhattanDistance(position, i)))
+    distance.sort()
+    return distance[0]
 
 class ClosestDotSearchAgent(SearchAgent):
     "Search for all food using a sequence of searches"
