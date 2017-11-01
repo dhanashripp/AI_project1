@@ -18,7 +18,6 @@ Pacman agents (in searchAgents.py).
 """
 
 import util
-import searchAgents
 
 class SearchProblem:
     """
@@ -77,29 +76,27 @@ def depthFirstSearch(problem):
     """
     Search the deepest nodes in the search tree first.
 
-    Your search algorithm needs to return a list of actions that reaches the
-    goal. Make sure to implement a graph search algorithm.
-
-    To get started, you might want to try some of these simple commands to
-    understand the search problem that is being passed in:
-     "*** YOUR CODE HERE ***"
-    print "Start:", problem.getStartState()
-    print "Is the start a goal?", problem.isGoalState(problem.getStartState())
-    print "Start's successors:", problem.getSuccessors(problem.getStartState())
-
-
+    This algorithm returns a list of actions that reaches the goal by traversing
+    as deep as possible from neighbour to neighbour before backtracking. While
+    doing this the algorithm checks whether the node it would expand was
+    previously visited or not.
+    The pacman is assumed to travel in graph structure and does so by taking
+    steps in one of the following directions: North, South, East and West.
+    The data structure used for implementation of depth first search algorith
+    is STACK, since it works on LIFO order and helps us to traverse till deepest
+    node.
     """
 
     if(problem.isGoalState(problem.getStartState())):
         return []
     else:
         from game import Directions
-        dfs_stack = util.Stack()
+        dfs_stack = util.Stack() #initializing stack
         v1 = problem.getStartState()
-        visited = []
+        visited = [] #list to collect nodes those are visisted
         dfs_stack.push(v1)
-        previous_N = {}
-        previous_A = {}
+        previous_N = {} #list to collect parent nodes of the current node
+        previous_A = {} #list to collect actions leading to next nodes
         LIST=[]
         while (not dfs_stack.isEmpty()):
             vertex_popped = dfs_stack.pop()
@@ -107,11 +104,11 @@ def depthFirstSearch(problem):
                 Path = []
                 tempPath=[]
                 g = vertex_popped
-                while g in previous_N:
+                while g in previous_N: #traversing from goal to start startState
                     temp = previous_A[g]
                     tempPath.append(temp)
                     g = previous_N[g]
-                for j in reversed(tempPath):
+                for j in reversed(tempPath): # reversing the path since we want path from start node till goal state
                     Path.append(j)
                 return Path
             if((vertex_popped not in visited)):
@@ -134,28 +131,43 @@ def depthFirstSearch(problem):
                     dfs_stack.push(N)
 
 def breadthFirstSearch(problem):
+    """
+    Search all the neighbours of a node before visiting neighbours' neighbours.
+
+    This algorithm returns a list of actions that reaches the goal by traversing
+    all the nodes at one level before expanding nodes of next level. While
+    doing this the algorithm checks whether the node it would expand was
+    previously visited or not.
+    The pacman is assumed to travel in graph structure and does so by taking
+    steps in one of the following directions: North, South, East and West.
+    The data structure used for implementation of depth first search algorith
+    is QUEUE, since it works on FIFO order and helps us traverse all the
+    neighbours.
+    """
     if(problem.isGoalState(problem.getStartState())):
         return []
     else:
         from game import Directions
-        bfs_queue = util.Queue()
+        bfs_queue = util.Queue() #initializing queue
         v1 = problem.getStartState()
-        visited = []
+        visited = []    #list to collect nodes those are visisted
         bfs_queue.push(v1)
-        previous_N = {}
-        previous_A = {}
+        previous_N = {} #list to collect parent nodes of the current node
+        previous_A = {} #list to collect actions leading to next nodes
         LIST=[]
         visited.append(v1)
         while (not bfs_queue.isEmpty()):
             vertex_popped = bfs_queue.pop()
+
             if(problem.isGoalState(vertex_popped)):
                 Path = []
                 tempPath=[]
                 g = vertex_popped
-                while g in previous_N:
+                while g in previous_N:  #traversing from goal to start startState
                     temp = previous_A[g]
                     tempPath.append(temp)
                     g = previous_N[g]
+                # reversing the path since we want path from start node till goal state
                 for j in reversed(tempPath):
                     Path.append(j)
                 return Path
@@ -168,16 +180,27 @@ def breadthFirstSearch(problem):
                     bfs_queue.push(N)
 
 def uniformCostSearch(problem):
+    """
+    This algorithm is generalization of breadth first search.
+    All nodes have cost associated with them. Based upon this cost we find the
+    next node to be expanded. The node with least cost is expanded first.
+    While doing this the algorithm checks whether the node it would expand was
+    previously visited or not.
+    The pacman is assumed to travel in graph structure and does so by taking
+    steps in one of the following directions: North, South, East and West.
+    The data structure used for implementation of Uniform Cost search algorithm
+    is Priority QUEUE, where we push tuple of node and cost.
+    """
     if(problem.isGoalState(problem.getStartState())):
         return []
     else:
         v1 = problem.getStartState()
-        ucs_queue = util.PriorityQueue()
-        visited = []
+        ucs_queue = util.PriorityQueue() #initializing priority queue
+        visited = [] #list to collect nodes those are visisted
         cost = 0
         tupl = (v1, [], 0)
 
-        ucs_queue.push(tupl, cost)
+        ucs_queue.push(tupl, cost) #pushing node (N,A,C) and cost=f(n)
         while (not ucs_queue.isEmpty()):
             node = ucs_queue.pop()
             vertex_popped = node[0]
@@ -186,13 +209,13 @@ def uniformCostSearch(problem):
                 return node[1]
 
             if((vertex_popped not in visited)):
-                visited.append(vertex_popped)
-                s_cost = node[2]
+                visited.append(vertex_popped) #expanding the successors only when the node popped is already not expanded.
+
                 for (N,A,C) in problem.getSuccessors(vertex_popped):
-                    cost = s_cost
+                    cost =  node[2]
                     path = node[1]
-                    path = path + [A]
-                    cost += C
+                    path = path + [A] #update full path by appending action of node  that is being pushed
+                    cost += C #update total cost by adding cost of node  that is being pushed
                     ucs_queue.push((N, path, cost), cost)
 
 def nullHeuristic(state, problem=None):
@@ -203,36 +226,48 @@ def nullHeuristic(state, problem=None):
     return 0
 
 def aStarSearch(problem, heuristic=nullHeuristic):
-    
+    """
+    The issues(expansion of unnecessary nodes) of uniform cost search are solved
+    using A* search which adds a bias also known as heuristic to cost function
+    of each node. By default the heuristic used is nullHeuristic which makes A*
+    behave as UCS.
+    When A* is called using manhattanHeuristic it behaves better than UCS as it
+    expands only in direction of goal.
+    While doing this the algorithm checks whether the node it would expand was
+    previously visited or not.
+    The pacman is assumed to travel in graph structure and does so by taking
+    steps in one of the following directions: North, South, East and West.
+    The data structure used for implementation of A* search algorithm
+    is Priority QUEUE, where we push tuple of node and cost.
+    """
     if(problem.isGoalState(problem.getStartState())):
         return []
     else:
         v1 = problem.getStartState()
-        ucs_queue = util.PriorityQueue()
-        visited = []
+        as_queue = util.PriorityQueue() #initializing priority queue
+        visited = [] #list to collect nodes those are visisted
         cost = 0
-        h_value = heuristic(v1, problem)
+        h_value = heuristic(v1, problem) # with manhattanHeuristic as input to aStarSearch function h_value is the manhattanDistance
         tupl = (v1, [], 0)
 
-        ucs_queue.push(tupl, cost + h_value)
-        while (not ucs_queue.isEmpty()):
-            node = ucs_queue.pop()
+        as_queue.push(tupl, cost + h_value) #pushing node (N,A,C) and cost+heuristic= f(n)
+        while (not as_queue.isEmpty()):
+            node = as_queue.pop()
             vertex_popped = node[0]
 
             if(problem.isGoalState(vertex_popped)):
                 return node[1]
 
-            if((vertex_popped not in visited)):
+            if((vertex_popped not in visited)):#expanding the successors only when the node popped is already not expanded.
                 visited.append(vertex_popped)
-                s_cost = node[2]
-                for (N,A,C) in problem.getSuccessors(vertex_popped):
-                    cost = s_cost
-                    path = node[1]
-                    path = path + [A]
-                    cost += C
-                    new_hvalue = heuristic(N, problem)
-                    ucs_queue.push((N, path, cost), new_hvalue + cost)
 
+                for (N,A,C) in problem.getSuccessors(vertex_popped):
+                    cost = node[2]
+                    path = node[1]
+                    path = path + [A] #update full path by appending action of node  that is being pushed
+                    cost += C         #update total cost by adding cost of node  that is being pushed
+                    new_hvalue = heuristic(N, problem)
+                    as_queue.push((N, path, cost), new_hvalue + cost)
 
 # Abbreviations
 bfs = breadthFirstSearch

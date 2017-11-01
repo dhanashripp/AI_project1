@@ -1,0 +1,2484 @@
+[SearchAgent] using function bfs
+[SearchAgent] using problem type PositionSearchProblem
+Start: (35, 1)
+Is the start a goal?
+element popped
+
+(35, 1)
+element being pushed in Queue : (35, 2)
+element being pushed in Queue : (34, 1)
+element popped
+
+(35, 2)
+element being pushed in Queue : (35, 3)
+element popped
+
+(34, 1)
+element being pushed in Queue : (33, 1)
+element popped
+
+(35, 3)
+element being pushed in Queue : (35, 4)
+element being pushed in Queue : (34, 3)
+element popped
+
+(33, 1)
+element popped
+
+(35, 4)
+element being pushed in Queue : (35, 5)
+element popped
+
+(34, 3)
+element being pushed in Queue : (33, 3)
+element popped
+
+(35, 5)
+element popped
+
+(33, 3)
+element being pushed in Queue : (33, 4)
+element being pushed in Queue : (32, 3)
+element popped
+
+(33, 4)
+element being pushed in Queue : (33, 5)
+element popped
+
+(32, 3)
+element being pushed in Queue : (31, 3)
+element popped
+
+(33, 5)
+element being pushed in Queue : (33, 6)
+element popped
+
+(31, 3)
+element being pushed in Queue : (31, 4)
+element being pushed in Queue : (31, 2)
+element popped
+
+(33, 6)
+element being pushed in Queue : (33, 7)
+element popped
+
+(31, 4)
+element being pushed in Queue : (31, 5)
+element popped
+
+(31, 2)
+element being pushed in Queue : (31, 1)
+element popped
+
+(33, 7)
+element being pushed in Queue : (34, 7)
+element popped
+
+(31, 5)
+element being pushed in Queue : (31, 6)
+element being pushed in Queue : (30, 5)
+element popped
+
+(31, 1)
+element popped
+
+(34, 7)
+element being pushed in Queue : (35, 7)
+element popped
+
+(31, 6)
+element being pushed in Queue : (31, 7)
+element popped
+
+(30, 5)
+element being pushed in Queue : (29, 5)
+element popped
+
+(35, 7)
+element popped
+
+(31, 7)
+element being pushed in Queue : (31, 8)
+element popped
+
+(29, 5)
+element being pushed in Queue : (29, 4)
+element popped
+
+(31, 8)
+element being pushed in Queue : (31, 9)
+element popped
+
+(29, 4)
+element being pushed in Queue : (29, 3)
+element popped
+
+(31, 9)
+element being pushed in Queue : (31, 10)
+element being pushed in Queue : (32, 9)
+element popped
+
+(29, 3)
+element being pushed in Queue : (28, 3)
+element popped
+
+(31, 10)
+element being pushed in Queue : (31, 11)
+element popped
+
+(32, 9)
+element being pushed in Queue : (33, 9)
+element popped
+
+(28, 3)
+element being pushed in Queue : (27, 3)
+element popped
+
+(31, 11)
+element being pushed in Queue : (30, 11)
+element popped
+
+(33, 9)
+element being pushed in Queue : (33, 10)
+element being pushed in Queue : (34, 9)
+element popped
+
+(27, 3)
+element being pushed in Queue : (27, 4)
+element being pushed in Queue : (27, 2)
+element being pushed in Queue : (26, 3)
+element popped
+
+(30, 11)
+element being pushed in Queue : (29, 11)
+element popped
+
+(33, 10)
+element being pushed in Queue : (33, 11)
+element popped
+
+(34, 9)
+element being pushed in Queue : (35, 9)
+element popped
+
+(27, 4)
+element being pushed in Queue : (27, 5)
+element popped
+
+(27, 2)
+element being pushed in Queue : (27, 1)
+element popped
+
+(26, 3)
+element being pushed in Queue : (25, 3)
+element popped
+
+(29, 11)
+element popped
+
+(33, 11)
+element popped
+
+(35, 9)
+element being pushed in Queue : (35, 10)
+element popped
+
+(27, 5)
+element being pushed in Queue : (27, 6)
+element popped
+
+(27, 1)
+element being pushed in Queue : (28, 1)
+element popped
+
+(25, 3)
+element being pushed in Queue : (25, 4)
+element being pushed in Queue : (24, 3)
+element popped
+
+(35, 10)
+element being pushed in Queue : (35, 11)
+element popped
+
+(27, 6)
+element being pushed in Queue : (27, 7)
+element popped
+
+(28, 1)
+element being pushed in Queue : (29, 1)
+element popped
+
+(25, 4)
+element being pushed in Queue : (25, 5)
+element popped
+
+(24, 3)
+element being pushed in Queue : (23, 3)
+element popped
+
+(35, 11)
+element popped
+
+(27, 7)
+element being pushed in Queue : (28, 7)
+element popped
+
+(29, 1)
+element popped
+
+(25, 5)
+element being pushed in Queue : (25, 6)
+element being pushed in Queue : (24, 5)
+element popped
+
+(23, 3)
+element being pushed in Queue : (23, 2)
+element being pushed in Queue : (22, 3)
+element popped
+
+(28, 7)
+element being pushed in Queue : (29, 7)
+element popped
+
+(25, 6)
+element being pushed in Queue : (25, 7)
+element popped
+
+(24, 5)
+element being pushed in Queue : (23, 5)
+element popped
+
+(23, 2)
+element being pushed in Queue : (23, 1)
+element popped
+
+(22, 3)
+element being pushed in Queue : (21, 3)
+element popped
+
+(29, 7)
+element being pushed in Queue : (29, 8)
+element popped
+
+(25, 7)
+element being pushed in Queue : (24, 7)
+element popped
+
+(23, 5)
+element popped
+
+(23, 1)
+element being pushed in Queue : (24, 1)
+element being pushed in Queue : (22, 1)
+element popped
+
+(21, 3)
+element being pushed in Queue : (20, 3)
+element popped
+
+(29, 8)
+element being pushed in Queue : (29, 9)
+element popped
+
+(24, 7)
+element being pushed in Queue : (23, 7)
+element popped
+
+(24, 1)
+element being pushed in Queue : (25, 1)
+element popped
+
+(22, 1)
+element being pushed in Queue : (21, 1)
+element popped
+
+(20, 3)
+element being pushed in Queue : (19, 3)
+element popped
+
+(29, 9)
+element popped
+
+(23, 7)
+element being pushed in Queue : (23, 8)
+element being pushed in Queue : (22, 7)
+element popped
+
+(25, 1)
+element popped
+
+(21, 1)
+element being pushed in Queue : (20, 1)
+element popped
+
+(19, 3)
+element being pushed in Queue : (18, 3)
+element popped
+
+(23, 8)
+element being pushed in Queue : (23, 9)
+element popped
+
+(22, 7)
+element being pushed in Queue : (21, 7)
+element popped
+
+(20, 1)
+element being pushed in Queue : (19, 1)
+element popped
+
+(18, 3)
+element being pushed in Queue : (17, 3)
+element popped
+
+(23, 9)
+element being pushed in Queue : (24, 9)
+element popped
+
+(21, 7)
+element being pushed in Queue : (21, 8)
+element being pushed in Queue : (21, 6)
+element popped
+
+(19, 1)
+element popped
+
+(17, 3)
+element being pushed in Queue : (16, 3)
+element popped
+
+(24, 9)
+element being pushed in Queue : (25, 9)
+element popped
+
+(21, 8)
+element being pushed in Queue : (21, 9)
+element popped
+
+(21, 6)
+element being pushed in Queue : (21, 5)
+element popped
+
+(16, 3)
+element being pushed in Queue : (15, 3)
+element popped
+
+(25, 9)
+element popped
+
+(21, 9)
+element popped
+
+(21, 5)
+element popped
+
+(15, 3)
+element being pushed in Queue : (15, 4)
+element being pushed in Queue : (15, 2)
+element being pushed in Queue : (14, 3)
+element popped
+
+(15, 4)
+element being pushed in Queue : (15, 5)
+element popped
+
+(15, 2)
+element being pushed in Queue : (15, 1)
+element popped
+
+(14, 3)
+element being pushed in Queue : (13, 3)
+element popped
+
+(15, 5)
+element being pushed in Queue : (16, 5)
+element popped
+
+(15, 1)
+element being pushed in Queue : (16, 1)
+element popped
+
+(13, 3)
+element being pushed in Queue : (13, 4)
+element popped
+
+(16, 5)
+element being pushed in Queue : (17, 5)
+element popped
+
+(16, 1)
+element being pushed in Queue : (17, 1)
+element popped
+
+(13, 4)
+element being pushed in Queue : (13, 5)
+element popped
+
+(17, 5)
+element being pushed in Queue : (17, 6)
+element being pushed in Queue : (18, 5)
+element popped
+
+(17, 1)
+element popped
+
+(13, 5)
+element popped
+
+(17, 6)
+element being pushed in Queue : (17, 7)
+element popped
+
+(18, 5)
+element being pushed in Queue : (19, 5)
+element popped
+
+(17, 7)
+element being pushed in Queue : (16, 7)
+element popped
+
+(19, 5)
+element popped
+
+(16, 7)
+element being pushed in Queue : (15, 7)
+element popped
+
+(15, 7)
+element being pushed in Queue : (15, 8)
+element being pushed in Queue : (14, 7)
+element popped
+
+(15, 8)
+element being pushed in Queue : (15, 9)
+element popped
+
+(14, 7)
+element being pushed in Queue : (13, 7)
+element popped
+
+(15, 9)
+element being pushed in Queue : (15, 10)
+element popped
+
+(13, 7)
+element popped
+
+(15, 10)
+element being pushed in Queue : (15, 11)
+element popped
+
+(15, 11)
+element being pushed in Queue : (15, 12)
+element popped
+
+(15, 12)
+element being pushed in Queue : (15, 13)
+element popped
+
+(15, 13)
+element being pushed in Queue : (16, 13)
+element being pushed in Queue : (14, 13)
+element popped
+
+(16, 13)
+element being pushed in Queue : (17, 13)
+element popped
+
+(14, 13)
+element popped
+
+(17, 13)
+element being pushed in Queue : (17, 12)
+element being pushed in Queue : (18, 13)
+element popped
+
+(17, 12)
+element being pushed in Queue : (17, 11)
+element popped
+
+(18, 13)
+element being pushed in Queue : (19, 13)
+element popped
+
+(17, 11)
+element being pushed in Queue : (17, 10)
+element popped
+
+(19, 13)
+element being pushed in Queue : (19, 12)
+element being pushed in Queue : (20, 13)
+element popped
+
+(17, 10)
+element being pushed in Queue : (17, 9)
+element popped
+
+(19, 12)
+element being pushed in Queue : (19, 11)
+element popped
+
+(20, 13)
+element being pushed in Queue : (21, 13)
+element popped
+
+(17, 9)
+element being pushed in Queue : (18, 9)
+element popped
+
+(19, 11)
+element popped
+
+(21, 13)
+element being pushed in Queue : (21, 14)
+element being pushed in Queue : (21, 12)
+element popped
+
+(18, 9)
+element being pushed in Queue : (19, 9)
+element popped
+
+(21, 14)
+element being pushed in Queue : (21, 15)
+element popped
+
+(21, 12)
+element being pushed in Queue : (21, 11)
+element popped
+
+(19, 9)
+element being pushed in Queue : (19, 8)
+element popped
+
+(21, 15)
+element being pushed in Queue : (22, 15)
+element popped
+
+(21, 11)
+element being pushed in Queue : (22, 11)
+element popped
+
+(19, 8)
+element being pushed in Queue : (19, 7)
+element popped
+
+(22, 15)
+element being pushed in Queue : (23, 15)
+element popped
+
+(22, 11)
+element being pushed in Queue : (23, 11)
+element popped
+
+(19, 7)
+element popped
+
+(23, 15)
+element being pushed in Queue : (24, 15)
+element popped
+
+(23, 11)
+element being pushed in Queue : (23, 12)
+element being pushed in Queue : (24, 11)
+element popped
+
+(24, 15)
+element being pushed in Queue : (25, 15)
+element popped
+
+(23, 12)
+element being pushed in Queue : (23, 13)
+element popped
+
+(24, 11)
+element being pushed in Queue : (25, 11)
+element popped
+
+(25, 15)
+element popped
+
+(23, 13)
+element being pushed in Queue : (24, 13)
+element popped
+
+(25, 11)
+element being pushed in Queue : (26, 11)
+element popped
+
+(24, 13)
+element being pushed in Queue : (25, 13)
+element popped
+
+(26, 11)
+element being pushed in Queue : (27, 11)
+element popped
+
+(25, 13)
+element being pushed in Queue : (26, 13)
+element popped
+
+(27, 11)
+element being pushed in Queue : (27, 10)
+element popped
+
+(26, 13)
+element being pushed in Queue : (27, 13)
+element popped
+
+(27, 10)
+element being pushed in Queue : (27, 9)
+element popped
+
+(27, 13)
+element being pushed in Queue : (27, 14)
+element popped
+
+(27, 9)
+element popped
+
+(27, 14)
+element being pushed in Queue : (27, 15)
+element popped
+
+(27, 15)
+element being pushed in Queue : (28, 15)
+element popped
+
+(28, 15)
+element being pushed in Queue : (29, 15)
+element popped
+
+(29, 15)
+element being pushed in Queue : (29, 14)
+element popped
+
+(29, 14)
+element being pushed in Queue : (29, 13)
+element popped
+
+(29, 13)
+element being pushed in Queue : (30, 13)
+element popped
+
+(30, 13)
+element being pushed in Queue : (31, 13)
+element popped
+
+(31, 13)
+element being pushed in Queue : (31, 14)
+element being pushed in Queue : (32, 13)
+element popped
+
+(31, 14)
+element being pushed in Queue : (31, 15)
+element popped
+
+(32, 13)
+element being pushed in Queue : (33, 13)
+element popped
+
+(31, 15)
+element being pushed in Queue : (31, 16)
+element popped
+
+(33, 13)
+element being pushed in Queue : (34, 13)
+element popped
+
+(31, 16)
+element being pushed in Queue : (31, 17)
+element popped
+
+(34, 13)
+element being pushed in Queue : (35, 13)
+element popped
+
+(31, 17)
+element being pushed in Queue : (31, 18)
+element popped
+
+(35, 13)
+element being pushed in Queue : (35, 14)
+element popped
+
+(31, 18)
+element being pushed in Queue : (31, 19)
+element popped
+
+(35, 14)
+element being pushed in Queue : (35, 15)
+element popped
+
+(31, 19)
+element being pushed in Queue : (31, 20)
+element being pushed in Queue : (32, 19)
+element popped
+
+(35, 15)
+element being pushed in Queue : (34, 15)
+element popped
+
+(31, 20)
+element being pushed in Queue : (31, 21)
+element popped
+
+(32, 19)
+element being pushed in Queue : (33, 19)
+element popped
+
+(34, 15)
+element being pushed in Queue : (33, 15)
+element popped
+
+(31, 21)
+element popped
+
+(33, 19)
+element being pushed in Queue : (33, 20)
+element being pushed in Queue : (34, 19)
+element popped
+
+(33, 15)
+element being pushed in Queue : (33, 16)
+element popped
+
+(33, 20)
+element being pushed in Queue : (33, 21)
+element popped
+
+(34, 19)
+element being pushed in Queue : (35, 19)
+element popped
+
+(33, 16)
+element being pushed in Queue : (33, 17)
+element popped
+
+(33, 21)
+element popped
+
+(35, 19)
+element being pushed in Queue : (35, 20)
+element popped
+
+(33, 17)
+element being pushed in Queue : (34, 17)
+element popped
+
+(35, 20)
+element being pushed in Queue : (35, 21)
+element popped
+
+(34, 17)
+element being pushed in Queue : (35, 17)
+element popped
+
+(35, 21)
+element being pushed in Queue : (35, 22)
+element popped
+
+(35, 17)
+element popped
+
+(35, 22)
+element being pushed in Queue : (35, 23)
+element popped
+
+(35, 23)
+element being pushed in Queue : (35, 24)
+element being pushed in Queue : (34, 23)
+element popped
+
+(35, 24)
+element being pushed in Queue : (35, 25)
+element popped
+
+(34, 23)
+element being pushed in Queue : (33, 23)
+element popped
+
+(35, 25)
+element being pushed in Queue : (35, 26)
+element popped
+
+(33, 23)
+element popped
+
+(35, 26)
+element being pushed in Queue : (35, 27)
+element popped
+
+(35, 27)
+element being pushed in Queue : (35, 28)
+element popped
+
+(35, 28)
+element being pushed in Queue : (35, 29)
+element popped
+
+(35, 29)
+element being pushed in Queue : (35, 30)
+element being pushed in Queue : (34, 29)
+element popped
+
+(35, 30)
+element being pushed in Queue : (35, 31)
+element popped
+
+(34, 29)
+element being pushed in Queue : (33, 29)
+element popped
+
+(35, 31)
+element being pushed in Queue : (34, 31)
+element popped
+
+(33, 29)
+element being pushed in Queue : (33, 28)
+element popped
+
+(34, 31)
+element being pushed in Queue : (33, 31)
+element popped
+
+(33, 28)
+element being pushed in Queue : (33, 27)
+element popped
+
+(33, 31)
+element being pushed in Queue : (33, 32)
+element popped
+
+(33, 27)
+element being pushed in Queue : (33, 26)
+element being pushed in Queue : (32, 27)
+element popped
+
+(33, 32)
+element being pushed in Queue : (33, 33)
+element popped
+
+(33, 26)
+element being pushed in Queue : (33, 25)
+element popped
+
+(32, 27)
+element being pushed in Queue : (31, 27)
+element popped
+
+(33, 33)
+element being pushed in Queue : (33, 34)
+element being pushed in Queue : (34, 33)
+element popped
+
+(33, 25)
+element popped
+
+(31, 27)
+element being pushed in Queue : (31, 28)
+element being pushed in Queue : (30, 27)
+element popped
+
+(33, 34)
+element being pushed in Queue : (33, 35)
+element popped
+
+(34, 33)
+element being pushed in Queue : (35, 33)
+element popped
+
+(31, 28)
+element being pushed in Queue : (31, 29)
+element popped
+
+(30, 27)
+element being pushed in Queue : (29, 27)
+element popped
+
+(33, 35)
+element being pushed in Queue : (32, 35)
+element popped
+
+(35, 33)
+element being pushed in Queue : (35, 34)
+element popped
+
+(31, 29)
+element being pushed in Queue : (31, 30)
+element popped
+
+(29, 27)
+element being pushed in Queue : (29, 28)
+element being pushed in Queue : (29, 26)
+element popped
+
+(32, 35)
+element being pushed in Queue : (31, 35)
+element popped
+
+(35, 34)
+element being pushed in Queue : (35, 35)
+element popped
+
+(31, 30)
+element being pushed in Queue : (31, 31)
+element popped
+
+(29, 28)
+element being pushed in Queue : (29, 29)
+element popped
+
+(29, 26)
+element being pushed in Queue : (29, 25)
+element popped
+
+(31, 35)
+element being pushed in Queue : (30, 35)
+element popped
+
+(35, 35)
+element popped
+
+(31, 31)
+element being pushed in Queue : (31, 32)
+element popped
+
+(29, 29)
+element popped
+
+(29, 25)
+element being pushed in Queue : (29, 24)
+element popped
+
+(30, 35)
+element being pushed in Queue : (29, 35)
+element popped
+
+(31, 32)
+element being pushed in Queue : (31, 33)
+element popped
+
+(29, 24)
+element being pushed in Queue : (29, 23)
+element popped
+
+(29, 35)
+element popped
+
+(31, 33)
+element popped
+
+(29, 23)
+element being pushed in Queue : (29, 22)
+element being pushed in Queue : (30, 23)
+element popped
+
+(29, 22)
+element being pushed in Queue : (29, 21)
+element popped
+
+(30, 23)
+element being pushed in Queue : (31, 23)
+element popped
+
+(29, 21)
+element being pushed in Queue : (29, 20)
+element being pushed in Queue : (28, 21)
+element popped
+
+(31, 23)
+element being pushed in Queue : (31, 24)
+element popped
+
+(29, 20)
+element being pushed in Queue : (29, 19)
+element popped
+
+(28, 21)
+element being pushed in Queue : (27, 21)
+element popped
+
+(31, 24)
+element being pushed in Queue : (31, 25)
+element popped
+
+(29, 19)
+element popped
+
+(27, 21)
+element being pushed in Queue : (27, 20)
+element popped
+
+(31, 25)
+element popped
+
+(27, 20)
+element being pushed in Queue : (27, 19)
+element popped
+
+(27, 19)
+element being pushed in Queue : (27, 18)
+element popped
+
+(27, 18)
+element being pushed in Queue : (27, 17)
+element popped
+
+(27, 17)
+element being pushed in Queue : (28, 17)
+element being pushed in Queue : (26, 17)
+element popped
+
+(28, 17)
+element being pushed in Queue : (29, 17)
+element popped
+
+(26, 17)
+element being pushed in Queue : (25, 17)
+element popped
+
+(29, 17)
+element popped
+
+(25, 17)
+element being pushed in Queue : (25, 18)
+element popped
+
+(25, 18)
+element being pushed in Queue : (25, 19)
+element popped
+
+(25, 19)
+element being pushed in Queue : (25, 20)
+element being pushed in Queue : (24, 19)
+element popped
+
+(25, 20)
+element being pushed in Queue : (25, 21)
+element popped
+
+(24, 19)
+element being pushed in Queue : (23, 19)
+element popped
+
+(25, 21)
+element being pushed in Queue : (25, 22)
+element popped
+
+(23, 19)
+element being pushed in Queue : (22, 19)
+element popped
+
+(25, 22)
+element being pushed in Queue : (25, 23)
+element popped
+
+(22, 19)
+element being pushed in Queue : (21, 19)
+element popped
+
+(25, 23)
+element being pushed in Queue : (25, 24)
+element being pushed in Queue : (26, 23)
+element being pushed in Queue : (24, 23)
+element popped
+
+(21, 19)
+element being pushed in Queue : (21, 20)
+element being pushed in Queue : (21, 18)
+element being pushed in Queue : (20, 19)
+element popped
+
+(25, 24)
+element being pushed in Queue : (25, 25)
+element popped
+
+(26, 23)
+element being pushed in Queue : (27, 23)
+element popped
+
+(24, 23)
+element being pushed in Queue : (23, 23)
+element popped
+
+(21, 20)
+element being pushed in Queue : (21, 21)
+element popped
+
+(21, 18)
+element being pushed in Queue : (21, 17)
+element popped
+
+(20, 19)
+element being pushed in Queue : (19, 19)
+element popped
+
+(25, 25)
+element being pushed in Queue : (25, 26)
+element being pushed in Queue : (26, 25)
+element popped
+
+(27, 23)
+element popped
+
+(23, 23)
+element popped
+
+(21, 21)
+element being pushed in Queue : (21, 22)
+element being pushed in Queue : (22, 21)
+element being pushed in Queue : (20, 21)
+element popped
+
+(21, 17)
+element being pushed in Queue : (22, 17)
+element popped
+
+(19, 19)
+element being pushed in Queue : (18, 19)
+element popped
+
+(25, 26)
+element being pushed in Queue : (25, 27)
+element popped
+
+(26, 25)
+element being pushed in Queue : (27, 25)
+element popped
+
+(21, 22)
+element being pushed in Queue : (21, 23)
+element popped
+
+(22, 21)
+element being pushed in Queue : (23, 21)
+element popped
+
+(20, 21)
+element being pushed in Queue : (19, 21)
+element popped
+
+(22, 17)
+element being pushed in Queue : (23, 17)
+element popped
+
+(18, 19)
+element being pushed in Queue : (17, 19)
+element popped
+
+(25, 27)
+element being pushed in Queue : (25, 28)
+element being pushed in Queue : (26, 27)
+element popped
+
+(27, 25)
+element popped
+
+(21, 23)
+element being pushed in Queue : (20, 23)
+element popped
+
+(23, 21)
+element popped
+
+(19, 21)
+element popped
+
+(23, 17)
+element popped
+
+(17, 19)
+element being pushed in Queue : (17, 20)
+element being pushed in Queue : (16, 19)
+element popped
+
+(25, 28)
+element being pushed in Queue : (25, 29)
+element popped
+
+(26, 27)
+element being pushed in Queue : (27, 27)
+element popped
+
+(20, 23)
+element being pushed in Queue : (19, 23)
+element popped
+
+(17, 20)
+element being pushed in Queue : (17, 21)
+element popped
+
+(16, 19)
+element being pushed in Queue : (15, 19)
+element popped
+
+(25, 29)
+element being pushed in Queue : (25, 30)
+element being pushed in Queue : (26, 29)
+element being pushed in Queue : (24, 29)
+element popped
+
+(27, 27)
+element popped
+
+(19, 23)
+element being pushed in Queue : (18, 23)
+element popped
+
+(17, 21)
+element popped
+
+(15, 19)
+element being pushed in Queue : (15, 18)
+element being pushed in Queue : (14, 19)
+element popped
+
+(25, 30)
+element being pushed in Queue : (25, 31)
+element popped
+
+(26, 29)
+element being pushed in Queue : (27, 29)
+element popped
+
+(24, 29)
+element being pushed in Queue : (23, 29)
+element popped
+
+(18, 23)
+element being pushed in Queue : (17, 23)
+element popped
+
+(15, 18)
+element being pushed in Queue : (15, 17)
+element popped
+
+(14, 19)
+element being pushed in Queue : (13, 19)
+element popped
+
+(25, 31)
+element being pushed in Queue : (25, 32)
+element popped
+
+(27, 29)
+element being pushed in Queue : (27, 30)
+element popped
+
+(23, 29)
+element popped
+
+(17, 23)
+element popped
+
+(15, 17)
+element being pushed in Queue : (16, 17)
+element popped
+
+(13, 19)
+element being pushed in Queue : (13, 20)
+element being pushed in Queue : (13, 18)
+element being pushed in Queue : (12, 19)
+element popped
+
+(25, 32)
+element being pushed in Queue : (25, 33)
+element popped
+
+(27, 30)
+element being pushed in Queue : (27, 31)
+element popped
+
+(16, 17)
+element being pushed in Queue : (17, 17)
+element popped
+
+(13, 20)
+element being pushed in Queue : (13, 21)
+element popped
+
+(13, 18)
+element being pushed in Queue : (13, 17)
+element popped
+
+(12, 19)
+element being pushed in Queue : (11, 19)
+element popped
+
+(25, 33)
+element being pushed in Queue : (25, 34)
+element being pushed in Queue : (26, 33)
+element popped
+
+(27, 31)
+element being pushed in Queue : (28, 31)
+element popped
+
+(17, 17)
+element being pushed in Queue : (18, 17)
+element popped
+
+(13, 21)
+element being pushed in Queue : (14, 21)
+element being pushed in Queue : (12, 21)
+element popped
+
+(13, 17)
+element popped
+
+(11, 19)
+element being pushed in Queue : (11, 18)
+element being pushed in Queue : (10, 19)
+element popped
+
+(25, 34)
+element being pushed in Queue : (25, 35)
+element popped
+
+(26, 33)
+element being pushed in Queue : (27, 33)
+element popped
+
+(28, 31)
+element being pushed in Queue : (29, 31)
+element popped
+
+(18, 17)
+element being pushed in Queue : (19, 17)
+element popped
+
+(14, 21)
+element being pushed in Queue : (15, 21)
+element popped
+
+(12, 21)
+element being pushed in Queue : (11, 21)
+element popped
+
+(11, 18)
+element being pushed in Queue : (11, 17)
+element popped
+
+(10, 19)
+element being pushed in Queue : (9, 19)
+element popped
+
+(25, 35)
+element being pushed in Queue : (26, 35)
+element popped
+
+(27, 33)
+element being pushed in Queue : (28, 33)
+element popped
+
+(29, 31)
+element popped
+
+(19, 17)
+element being pushed in Queue : (19, 16)
+element popped
+
+(15, 21)
+element being pushed in Queue : (15, 22)
+element popped
+
+(11, 21)
+element popped
+
+(11, 17)
+element popped
+
+(9, 19)
+element being pushed in Queue : (9, 20)
+element popped
+
+(26, 35)
+element being pushed in Queue : (27, 35)
+element popped
+
+(28, 33)
+element being pushed in Queue : (29, 33)
+element popped
+
+(19, 16)
+element being pushed in Queue : (19, 15)
+element popped
+
+(15, 22)
+element being pushed in Queue : (15, 23)
+element popped
+
+(9, 20)
+element being pushed in Queue : (9, 21)
+element popped
+
+(27, 35)
+element popped
+
+(29, 33)
+element popped
+
+(19, 15)
+element popped
+
+(15, 23)
+element being pushed in Queue : (15, 24)
+element being pushed in Queue : (14, 23)
+element popped
+
+(9, 21)
+element being pushed in Queue : (9, 22)
+element popped
+
+(15, 24)
+element being pushed in Queue : (15, 25)
+element popped
+
+(14, 23)
+element being pushed in Queue : (13, 23)
+element popped
+
+(9, 22)
+element being pushed in Queue : (9, 23)
+element popped
+
+(15, 25)
+element being pushed in Queue : (15, 26)
+element popped
+
+(13, 23)
+element being pushed in Queue : (13, 24)
+element popped
+
+(9, 23)
+element being pushed in Queue : (10, 23)
+element being pushed in Queue : (8, 23)
+element popped
+
+(15, 26)
+element being pushed in Queue : (15, 27)
+element popped
+
+(13, 24)
+element being pushed in Queue : (13, 25)
+element popped
+
+(10, 23)
+element being pushed in Queue : (11, 23)
+element popped
+
+(8, 23)
+element being pushed in Queue : (7, 23)
+element popped
+
+(15, 27)
+element being pushed in Queue : (16, 27)
+element popped
+
+(13, 25)
+element popped
+
+(11, 23)
+element popped
+
+(7, 23)
+element being pushed in Queue : (7, 22)
+element popped
+
+(16, 27)
+element being pushed in Queue : (17, 27)
+element popped
+
+(7, 22)
+element being pushed in Queue : (7, 21)
+element popped
+
+(17, 27)
+element being pushed in Queue : (17, 26)
+element being pushed in Queue : (18, 27)
+element popped
+
+(7, 21)
+element being pushed in Queue : (7, 20)
+element popped
+
+(17, 26)
+element being pushed in Queue : (17, 25)
+element popped
+
+(18, 27)
+element being pushed in Queue : (19, 27)
+element popped
+
+(7, 20)
+element being pushed in Queue : (7, 19)
+element popped
+
+(17, 25)
+element popped
+
+(19, 27)
+element being pushed in Queue : (19, 26)
+element being pushed in Queue : (20, 27)
+element popped
+
+(7, 19)
+element popped
+
+(19, 26)
+element being pushed in Queue : (19, 25)
+element popped
+
+(20, 27)
+element being pushed in Queue : (21, 27)
+element popped
+
+(19, 25)
+element being pushed in Queue : (20, 25)
+element popped
+
+(21, 27)
+element being pushed in Queue : (21, 28)
+element popped
+
+(20, 25)
+element being pushed in Queue : (21, 25)
+element popped
+
+(21, 28)
+element being pushed in Queue : (21, 29)
+element popped
+
+(21, 25)
+element being pushed in Queue : (22, 25)
+element popped
+
+(21, 29)
+element being pushed in Queue : (21, 30)
+element being pushed in Queue : (20, 29)
+element popped
+
+(22, 25)
+element being pushed in Queue : (23, 25)
+element popped
+
+(21, 30)
+element being pushed in Queue : (21, 31)
+element popped
+
+(20, 29)
+element being pushed in Queue : (19, 29)
+element popped
+
+(23, 25)
+element being pushed in Queue : (23, 26)
+element popped
+
+(21, 31)
+element being pushed in Queue : (21, 32)
+element being pushed in Queue : (22, 31)
+element popped
+
+(19, 29)
+element popped
+
+(23, 26)
+element being pushed in Queue : (23, 27)
+element popped
+
+(21, 32)
+element being pushed in Queue : (21, 33)
+element popped
+
+(22, 31)
+element being pushed in Queue : (23, 31)
+element popped
+
+(23, 27)
+element popped
+
+(21, 33)
+element being pushed in Queue : (21, 34)
+element being pushed in Queue : (22, 33)
+element being pushed in Queue : (20, 33)
+element popped
+
+(23, 31)
+element popped
+
+(21, 34)
+element being pushed in Queue : (21, 35)
+element popped
+
+(22, 33)
+element being pushed in Queue : (23, 33)
+element popped
+
+(20, 33)
+element being pushed in Queue : (19, 33)
+element popped
+
+(21, 35)
+element being pushed in Queue : (22, 35)
+element being pushed in Queue : (20, 35)
+element popped
+
+(23, 33)
+element popped
+
+(19, 33)
+element being pushed in Queue : (19, 32)
+element popped
+
+(22, 35)
+element being pushed in Queue : (23, 35)
+element popped
+
+(20, 35)
+element being pushed in Queue : (19, 35)
+element popped
+
+(19, 32)
+element being pushed in Queue : (19, 31)
+element popped
+
+(23, 35)
+element popped
+
+(19, 35)
+element being pushed in Queue : (18, 35)
+element popped
+
+(19, 31)
+element popped
+
+(18, 35)
+element being pushed in Queue : (17, 35)
+element popped
+
+(17, 35)
+element being pushed in Queue : (17, 34)
+element being pushed in Queue : (16, 35)
+element popped
+
+(17, 34)
+element being pushed in Queue : (17, 33)
+element popped
+
+(16, 35)
+element being pushed in Queue : (15, 35)
+element popped
+
+(17, 33)
+element being pushed in Queue : (17, 32)
+element popped
+
+(15, 35)
+element being pushed in Queue : (15, 34)
+element being pushed in Queue : (14, 35)
+element popped
+
+(17, 32)
+element being pushed in Queue : (17, 31)
+element popped
+
+(15, 34)
+element being pushed in Queue : (15, 33)
+element popped
+
+(14, 35)
+element being pushed in Queue : (13, 35)
+element popped
+
+(17, 31)
+element popped
+
+(15, 33)
+element being pushed in Queue : (15, 32)
+element being pushed in Queue : (14, 33)
+element popped
+
+(13, 35)
+element popped
+
+(15, 32)
+element being pushed in Queue : (15, 31)
+element popped
+
+(14, 33)
+element being pushed in Queue : (13, 33)
+element popped
+
+(15, 31)
+element being pushed in Queue : (15, 30)
+element popped
+
+(13, 33)
+element being pushed in Queue : (12, 33)
+element popped
+
+(15, 30)
+element being pushed in Queue : (15, 29)
+element popped
+
+(12, 33)
+element being pushed in Queue : (11, 33)
+element popped
+
+(15, 29)
+element being pushed in Queue : (16, 29)
+element popped
+
+(11, 33)
+element being pushed in Queue : (11, 34)
+element being pushed in Queue : (11, 32)
+element being pushed in Queue : (10, 33)
+element popped
+
+(16, 29)
+element being pushed in Queue : (17, 29)
+element popped
+
+(11, 34)
+element being pushed in Queue : (11, 35)
+element popped
+
+(11, 32)
+element being pushed in Queue : (11, 31)
+element popped
+
+(10, 33)
+element being pushed in Queue : (9, 33)
+element popped
+
+(17, 29)
+element popped
+
+(11, 35)
+element popped
+
+(11, 31)
+element being pushed in Queue : (11, 30)
+element being pushed in Queue : (12, 31)
+element popped
+
+(9, 33)
+element being pushed in Queue : (9, 34)
+element popped
+
+(11, 30)
+element being pushed in Queue : (11, 29)
+element popped
+
+(12, 31)
+element being pushed in Queue : (13, 31)
+element popped
+
+(9, 34)
+element being pushed in Queue : (9, 35)
+element popped
+
+(11, 29)
+element being pushed in Queue : (12, 29)
+element being pushed in Queue : (10, 29)
+element popped
+
+(13, 31)
+element popped
+
+(9, 35)
+element popped
+
+(12, 29)
+element being pushed in Queue : (13, 29)
+element popped
+
+(10, 29)
+element being pushed in Queue : (9, 29)
+element popped
+
+(13, 29)
+element being pushed in Queue : (13, 28)
+element popped
+
+(9, 29)
+element being pushed in Queue : (9, 30)
+element popped
+
+(13, 28)
+element being pushed in Queue : (13, 27)
+element popped
+
+(9, 30)
+element being pushed in Queue : (9, 31)
+element popped
+
+(13, 27)
+element being pushed in Queue : (12, 27)
+element popped
+
+(9, 31)
+element popped
+
+(12, 27)
+element being pushed in Queue : (11, 27)
+element popped
+
+(11, 27)
+element being pushed in Queue : (11, 26)
+element being pushed in Queue : (10, 27)
+element popped
+
+(11, 26)
+element being pushed in Queue : (11, 25)
+element popped
+
+(10, 27)
+element being pushed in Queue : (9, 27)
+element popped
+
+(11, 25)
+element popped
+
+(9, 27)
+element being pushed in Queue : (9, 26)
+element being pushed in Queue : (8, 27)
+element popped
+
+(9, 26)
+element being pushed in Queue : (9, 25)
+element popped
+
+(8, 27)
+element being pushed in Queue : (7, 27)
+element popped
+
+(9, 25)
+element being pushed in Queue : (8, 25)
+element popped
+
+(7, 27)
+element being pushed in Queue : (6, 27)
+element popped
+
+(8, 25)
+element being pushed in Queue : (7, 25)
+element popped
+
+(6, 27)
+element being pushed in Queue : (5, 27)
+element popped
+
+(7, 25)
+element being pushed in Queue : (6, 25)
+element popped
+
+(5, 27)
+element being pushed in Queue : (4, 27)
+element popped
+
+(6, 25)
+element being pushed in Queue : (5, 25)
+element popped
+
+(4, 27)
+element being pushed in Queue : (3, 27)
+element popped
+
+(5, 25)
+element being pushed in Queue : (5, 24)
+element popped
+
+(3, 27)
+element being pushed in Queue : (3, 28)
+element being pushed in Queue : (3, 26)
+element being pushed in Queue : (2, 27)
+element popped
+
+(5, 24)
+element being pushed in Queue : (5, 23)
+element popped
+
+(3, 28)
+element being pushed in Queue : (3, 29)
+element popped
+
+(3, 26)
+element being pushed in Queue : (3, 25)
+element popped
+
+(2, 27)
+element being pushed in Queue : (1, 27)
+element popped
+
+(5, 23)
+element popped
+
+(3, 29)
+element being pushed in Queue : (4, 29)
+element being pushed in Queue : (2, 29)
+element popped
+
+(3, 25)
+element being pushed in Queue : (3, 24)
+element popped
+
+(1, 27)
+element being pushed in Queue : (1, 26)
+element popped
+
+(4, 29)
+element being pushed in Queue : (5, 29)
+element popped
+
+(2, 29)
+element being pushed in Queue : (1, 29)
+element popped
+
+(3, 24)
+element being pushed in Queue : (3, 23)
+element popped
+
+(1, 26)
+element being pushed in Queue : (1, 25)
+element popped
+
+(5, 29)
+element being pushed in Queue : (5, 30)
+element being pushed in Queue : (6, 29)
+element popped
+
+(1, 29)
+element being pushed in Queue : (1, 30)
+element popped
+
+(3, 23)
+element being pushed in Queue : (3, 22)
+element popped
+
+(1, 25)
+element being pushed in Queue : (1, 24)
+element popped
+
+(5, 30)
+element being pushed in Queue : (5, 31)
+element popped
+
+(6, 29)
+element being pushed in Queue : (7, 29)
+element popped
+
+(1, 30)
+element being pushed in Queue : (1, 31)
+element popped
+
+(3, 22)
+element being pushed in Queue : (3, 21)
+element popped
+
+(1, 24)
+element being pushed in Queue : (1, 23)
+element popped
+
+(5, 31)
+element being pushed in Queue : (5, 32)
+element popped
+
+(7, 29)
+element being pushed in Queue : (7, 30)
+element popped
+
+(1, 31)
+element being pushed in Queue : (2, 31)
+element popped
+
+(3, 21)
+element being pushed in Queue : (3, 20)
+element being pushed in Queue : (4, 21)
+element being pushed in Queue : (2, 21)
+element popped
+
+(1, 23)
+element popped
+
+(5, 32)
+element being pushed in Queue : (5, 33)
+element popped
+
+(7, 30)
+element being pushed in Queue : (7, 31)
+element popped
+
+(2, 31)
+element being pushed in Queue : (3, 31)
+element popped
+
+(3, 20)
+element being pushed in Queue : (3, 19)
+element popped
+
+(4, 21)
+element being pushed in Queue : (5, 21)
+element popped
+
+(2, 21)
+element being pushed in Queue : (1, 21)
+element popped
+
+(5, 33)
+element being pushed in Queue : (6, 33)
+element being pushed in Queue : (4, 33)
+element popped
+
+(7, 31)
+element popped
+
+(3, 31)
+element popped
+
+(3, 19)
+element being pushed in Queue : (3, 18)
+element popped
+
+(5, 21)
+element being pushed in Queue : (5, 20)
+element popped
+
+(1, 21)
+element being pushed in Queue : (1, 20)
+element popped
+
+(6, 33)
+element being pushed in Queue : (7, 33)
+element popped
+
+(4, 33)
+element being pushed in Queue : (3, 33)
+element popped
+
+(3, 18)
+element being pushed in Queue : (3, 17)
+element popped
+
+(5, 20)
+element being pushed in Queue : (5, 19)
+element popped
+
+(1, 20)
+element being pushed in Queue : (1, 19)
+element popped
+
+(7, 33)
+element popped
+
+(3, 33)
+element being pushed in Queue : (2, 33)
+element popped
+
+(3, 17)
+element being pushed in Queue : (4, 17)
+element being pushed in Queue : (2, 17)
+element popped
+
+(5, 19)
+element popped
+
+(1, 19)
+element popped
+
+(2, 33)
+element being pushed in Queue : (1, 33)
+element popped
+
+(4, 17)
+element being pushed in Queue : (5, 17)
+element popped
+
+(2, 17)
+element being pushed in Queue : (1, 17)
+element popped
+
+(1, 33)
+element being pushed in Queue : (1, 34)
+element popped
+
+(5, 17)
+element being pushed in Queue : (5, 16)
+element being pushed in Queue : (6, 17)
+element popped
+
+(1, 17)
+element popped
+
+(1, 34)
+element being pushed in Queue : (1, 35)
+element popped
+
+(5, 16)
+element being pushed in Queue : (5, 15)
+element popped
+
+(6, 17)
+element being pushed in Queue : (7, 17)
+element popped
+
+(1, 35)
+element being pushed in Queue : (2, 35)
+element popped
+
+(5, 15)
+element being pushed in Queue : (5, 14)
+element popped
+
+(7, 17)
+element being pushed in Queue : (7, 16)
+element popped
+
+(2, 35)
+element being pushed in Queue : (3, 35)
+element popped
+
+(5, 14)
+element being pushed in Queue : (5, 13)
+element popped
+
+(7, 16)
+element being pushed in Queue : (7, 15)
+element popped
+
+(3, 35)
+element being pushed in Queue : (4, 35)
+element popped
+
+(5, 13)
+element being pushed in Queue : (5, 12)
+element being pushed in Queue : (4, 13)
+element popped
+
+(7, 15)
+element being pushed in Queue : (8, 15)
+element popped
+
+(4, 35)
+element being pushed in Queue : (5, 35)
+element popped
+
+(5, 12)
+element being pushed in Queue : (5, 11)
+element popped
+
+(4, 13)
+element being pushed in Queue : (3, 13)
+element popped
+
+(8, 15)
+element being pushed in Queue : (9, 15)
+element popped
+
+(5, 35)
+element being pushed in Queue : (6, 35)
+element popped
+
+(5, 11)
+element being pushed in Queue : (6, 11)
+element popped
+
+(3, 13)
+element being pushed in Queue : (3, 12)
+element popped
+
+(9, 15)
+element being pushed in Queue : (9, 16)
+element being pushed in Queue : (10, 15)
+element popped
+
+(6, 35)
+element being pushed in Queue : (7, 35)
+element popped
+
+(6, 11)
+element being pushed in Queue : (7, 11)
+element popped
+
+(3, 12)
+element being pushed in Queue : (3, 11)
+element popped
+
+(9, 16)
+element being pushed in Queue : (9, 17)
+element popped
+
+(10, 15)
+element being pushed in Queue : (11, 15)
+element popped
+
+(7, 35)
+element popped
+
+(7, 11)
+element being pushed in Queue : (7, 10)
+element popped
+
+(3, 11)
+element being pushed in Queue : (3, 10)
+element popped
+
+(9, 17)
+element popped
+
+(11, 15)
+element being pushed in Queue : (11, 14)
+element being pushed in Queue : (12, 15)
+element popped
+
+(7, 10)
+element being pushed in Queue : (7, 9)
+element popped
+
+(3, 10)
+element being pushed in Queue : (3, 9)
+element popped
+
+(11, 14)
+element being pushed in Queue : (11, 13)
+element popped
+
+(12, 15)
+element being pushed in Queue : (13, 15)
+element popped
+
+(7, 9)
+element popped
+
+(3, 9)
+element being pushed in Queue : (4, 9)
+element popped
+
+(11, 13)
+element being pushed in Queue : (11, 12)
+element being pushed in Queue : (12, 13)
+element being pushed in Queue : (10, 13)
+element popped
+
+(13, 15)
+element being pushed in Queue : (14, 15)
+element popped
+
+(4, 9)
+element being pushed in Queue : (5, 9)
+element popped
+
+(11, 12)
+element being pushed in Queue : (11, 11)
+element popped
+
+(12, 13)
+element popped
+
+(10, 13)
+element being pushed in Queue : (9, 13)
+element popped
+
+(14, 15)
+element being pushed in Queue : (15, 15)
+element popped
+
+(5, 9)
+element being pushed in Queue : (5, 8)
+element popped
+
+(11, 11)
+element being pushed in Queue : (11, 10)
+element being pushed in Queue : (12, 11)
+element being pushed in Queue : (10, 11)
+element popped
+
+(9, 13)
+element being pushed in Queue : (8, 13)
+element popped
+
+(15, 15)
+element being pushed in Queue : (16, 15)
+element popped
+
+(5, 8)
+element being pushed in Queue : (5, 7)
+element popped
+
+(11, 10)
+element being pushed in Queue : (11, 9)
+element popped
+
+(12, 11)
+element being pushed in Queue : (13, 11)
+element popped
+
+(10, 11)
+element being pushed in Queue : (9, 11)
+element popped
+
+(8, 13)
+element being pushed in Queue : (7, 13)
+element popped
+
+(16, 15)
+element being pushed in Queue : (17, 15)
+element popped
+
+(5, 7)
+element being pushed in Queue : (5, 6)
+element being pushed in Queue : (6, 7)
+element being pushed in Queue : (4, 7)
+element popped
+
+(11, 9)
+element being pushed in Queue : (10, 9)
+element popped
+
+(13, 11)
+element being pushed in Queue : (13, 10)
+element popped
+
+(9, 11)
+element popped
+
+(7, 13)
+element popped
+
+(17, 15)
+element popped
+
+(5, 6)
+element being pushed in Queue : (5, 5)
+element popped
+
+(6, 7)
+element being pushed in Queue : (7, 7)
+element popped
+
+(4, 7)
+element being pushed in Queue : (3, 7)
+element popped
+
+(10, 9)
+element being pushed in Queue : (9, 9)
+element popped
+
+(13, 10)
+element being pushed in Queue : (13, 9)
+element popped
+
+(5, 5)
+element popped
+
+(7, 7)
+element popped
+
+(3, 7)
+element being pushed in Queue : (3, 6)
+element being pushed in Queue : (2, 7)
+element popped
+
+(9, 9)
+element being pushed in Queue : (9, 8)
+element popped
+
+(13, 9)
+element popped
+
+(3, 6)
+element being pushed in Queue : (3, 5)
+element popped
+
+(2, 7)
+element being pushed in Queue : (1, 7)
+element popped
+
+(9, 8)
+element being pushed in Queue : (9, 7)
+element popped
+
+(3, 5)
+element being pushed in Queue : (3, 4)
+element popped
+
+(1, 7)
+element being pushed in Queue : (1, 8)
+element popped
+
+(9, 7)
+element being pushed in Queue : (10, 7)
+element popped
+
+(3, 4)
+element being pushed in Queue : (3, 3)
+element popped
+
+(1, 8)
+element being pushed in Queue : (1, 9)
+element popped
+
+(10, 7)
+element being pushed in Queue : (11, 7)
+element popped
+
+(3, 3)
+element being pushed in Queue : (3, 2)
+element being pushed in Queue : (2, 3)
+element popped
+
+(1, 9)
+element being pushed in Queue : (1, 10)
+element popped
+
+(11, 7)
+element being pushed in Queue : (11, 6)
+element popped
+
+(3, 2)
+element being pushed in Queue : (3, 1)
+element popped
+
+(2, 3)
+element being pushed in Queue : (1, 3)
+element popped
+
+(1, 10)
+element being pushed in Queue : (1, 11)
+element popped
+
+(11, 6)
+element being pushed in Queue : (11, 5)
+element popped
+
+(3, 1)
+element popped
+
+(1, 3)
+element being pushed in Queue : (1, 4)
+element being pushed in Queue : (1, 2)
+element popped
+
+(1, 11)
+element being pushed in Queue : (1, 12)
+element popped
+
+(11, 5)
+element being pushed in Queue : (11, 4)
+element popped
+
+(1, 4)
+element being pushed in Queue : (1, 5)
+element popped
+
+(1, 2)
+pacman in goal state
+
+210
+Path found with total cost of 210 in 0.1 seconds
+Search nodes expanded: 617
+Pacman emerges victorious! Score: 300
+Average Score: 300.0
+Scores:        300.0
+Win Rate:      1/1 (1.00)
+Record:        Win
