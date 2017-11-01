@@ -1,5 +1,4 @@
 # AI_project1
-AI assignment
 
 This project contain implementation of DFS, BFS, UCS, A-star search algorithms.
 Additional implementation include:
